@@ -30,4 +30,11 @@ defmodule Mix.Tasks.Materialize.Init do
 	defp copy_assets(npm_path) do
 	end
 
+	defp chek_path(path, text) do
+		unless File.exists? path do
+			Mix.raise """
+			Can't find "#{path}" #{text}
+			"""
+		end
+	end
 end
