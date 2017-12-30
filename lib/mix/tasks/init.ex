@@ -22,7 +22,7 @@ defmodule Mix.Tasks.Materialize.Init do
 		
 		npm_path = Path.join(~w(assets node_modules materialize-sass-origin))
 		
-		chek_path(npm_path, "\nTray run npm install materialize-sass-origin --save-dev")
+		check_path(npm_path, "\nTray run npm install materialize-sass-origin --save-dev")
 
     npm_path
 	end
@@ -40,10 +40,10 @@ defmodule Mix.Tasks.Materialize.Init do
 		target_source_path = Path.join([dist_path, dir])
 		make_dir target_source_path
 		File.cp_r(Path.join([source_path, dir]), target_source_path)
-		chek_path(target_source_path, "\n Can't copy #{target_source_path} folder")
+		check_path(target_source_path, "\n Can't copy #{target_source_path} folder")
 	end
 
-	defp chek_path(path, text) do
+	defp check_path(path, text) do
 		unless File.exists? path do
 			Mix.raise """
 			Can't find "#{path}" #{text}
