@@ -7,8 +7,27 @@ defmodule MaterializeSass.Mixfile do
       version: "0.1.0",
       elixir: "~> 1.5",
       start_permanent: Mix.env == :prod,
-      deps: deps()
+      deps: deps(),
+      package: package()
+      name: "MaterializeSass",
+      docs: [extras: ["README.md"], main: "MaterializeSass"],
+      description: description()
     ]
+  end
+
+  defp package do
+    [
+      files: ["lib", "mix.exs", "README", "LICENSE*"],
+      maintainers: ["Onur Kucukkece"],
+      licenses: ["Apache 2.0"],
+      links: %{"GitHub" => "https://github.com/fteem/eight_ball"}
+    ]
+  end
+
+  defp description do
+    """
+    A modern responsive front-end framework based on Material Design
+    """
   end
 
   # Run "mix help compile.app" to learn about applications.
