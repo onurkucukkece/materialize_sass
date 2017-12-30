@@ -14,6 +14,7 @@ defmodule Mix.Tasks.Materialize.Init do
 	def run(_) do
 		IO.puts "Installing materialize-sass-origin npm inside assets"
 		install_npm()
+		|> copy_assets
 	end
 
 	defp install_npm do
@@ -25,4 +26,8 @@ defmodule Mix.Tasks.Materialize.Init do
 
     npm_path
 	end
+
+	defp copy_assets(npm_path) do
+	end
+
 end
