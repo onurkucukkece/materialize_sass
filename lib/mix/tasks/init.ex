@@ -38,10 +38,8 @@ defmodule Mix.Tasks.Materialize.Init do
 
 	defp copy_resource(source_path, dist_path, dir) do
 		res_dist_path = Path.join([dist_path, dir])
-		unless File.exists? res_dist_path do
-			File.mkdir_p res_dist_path
-		end
 		File.cp_r(Path.join([source_path, dir]), res_dist_path)
+		make_dir target_source_path
 	end
 
 	defp chek_path(path, text) do
@@ -49,6 +47,12 @@ defmodule Mix.Tasks.Materialize.Init do
 			Mix.raise """
 			Can't find "#{path}" #{text}
 			"""
+		end
+	end
+
+	defp make_dir(path) do
+		unless File.exists? path do
+			File.mkdir_p path
 		end
 	end
 end
