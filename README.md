@@ -1,24 +1,24 @@
 # MaterializeSass
 
+https://hex.pm/packages/materialize_sass
+
 A modern responsive front-end framework based on Material Design
 
 http://materializecss.com/
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `materialize_sass` to your list of dependencies in `mix.exs`:
-
 This module requires Elixir / Phoenix 1.3 or newer.
 
-Add it to your project dependencies.
+If [available in Hex](https://hex.pm/docs/publish), the package can be installed
+by adding `materialize_sass` to your list of dependencies in `mix.exs`:
 
 
 ```elixir
 # mix.exs
 def deps do
   [
-    {:materialize_sass, "~> 0.1.0"}
+    {:materialize_sass, "~> 0.1.1"}
   ]
 end
 ```
