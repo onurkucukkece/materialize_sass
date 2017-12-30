@@ -37,9 +37,10 @@ defmodule Mix.Tasks.Materialize.Init do
 	end
 
 	defp copy_resource(source_path, dist_path, dir) do
-		res_dist_path = Path.join([dist_path, dir])
-		File.cp_r(Path.join([source_path, dir]), res_dist_path)
+		target_source_path = Path.join([dist_path, dir])
 		make_dir target_source_path
+		File.cp_r(Path.join([source_path, dir]), target_source_path)
+		chek_path(target_source_path, "\n Can't copy #{target_source_path} folder")
 	end
 
 	defp chek_path(path, text) do
