@@ -98,9 +98,9 @@ Finally include javascript in app.html after script tag for app.js
 Special thanks to @mistim for inspring this module from https://github.com/mistim/ex_materialize
 
 ## Todo
-⋅⋅* Add tests
-⋅⋅* Update brunch-config on initialization
-⋅⋅* css / scss option
+* Add tests
+* Update brunch-config on initialization
+* css / scss option
 
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
