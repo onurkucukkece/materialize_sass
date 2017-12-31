@@ -91,8 +91,8 @@ Finally include javascript in app.html after script tag for app.js
 ```
 <!-- lib/myapp_web/templates/layout/app.html.eex -->
 
-<script src="#{static_path(@conn, "/js/app.js")}"></script>
-<script src="#{static_path(@conn, "/js/materialize.min.js")}"></script>
+<script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+<script src="<%= static_path(@conn, "/js/materialize.min.js") %>"></script>
 ```
 
 Special thanks to @mistim for inspring this module from https://github.com/mistim/ex_materialize
