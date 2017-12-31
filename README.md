@@ -18,7 +18,7 @@ by adding `materialize_sass` to your list of dependencies in `mix.exs`:
 # mix.exs
 def deps do
   [
-    {:materialize_sass, "~> 0.1.2"}
+    {:materialize_sass, "~> 0.1.3"}
   ]
 end
 ```
@@ -30,7 +30,7 @@ Initialize materialize_sass
 
     $ mix materialize.init
     
-Add materialize files to ```assets/brunch-config.js``` and make sure sass is enabled in plugins config set. 
+Add materialize JS to ```assets/brunch-config.js``` and make sure sass is enabled in plugins config set. 
     
 ```elixir
 
@@ -43,15 +43,7 @@ exports.config = {
         "js/materialize.min.js": ["vendor/materialize/js/materialize.min.js"]
       }
     },
-    stylesheets: {
-      joinTo: {
-        "css/app.css": /^(css)/,
-        "css/materialize.css": ["vendor/materialize/css/materialize.css"],
-      }
-    },
-    templates: {
-      joinTo: "js/app.js"
-    }
+    ...
   },
 
   // Enable sass
@@ -71,6 +63,7 @@ Import materialize stylesheet library at the top in app.scss
 
 @import "vendor/materialize/sass/materialize";
 ```
+
 To customize globals, for example colors;
 
 ```
