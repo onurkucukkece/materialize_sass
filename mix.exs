@@ -4,7 +4,7 @@ defmodule MaterializeSass.Mixfile do
   def project do
     [
       app: :materialize_sass,
-      version: "0.1.1",
+      version: "0.1.2",
       elixir: "~> 1.5",
       start_permanent: Mix.env == :prod,
       deps: deps(),
@@ -20,7 +20,7 @@ defmodule MaterializeSass.Mixfile do
       files: ["lib", "mix.exs", "README*", "LICENSE*"],
       maintainers: ["Onur Kucukkece"],
       licenses: ["Apache 2.0"],
-      links: %{"GitHub" => "https://github.com/fteem/eight_ball"}
+      links: %{"GitHub" => "https://github.com/onurkucukkece/materialize_sass"}
     ]
   end
 

@@ -18,7 +18,7 @@ by adding `materialize_sass` to your list of dependencies in `mix.exs`:
 # mix.exs
 def deps do
   [
-    {:materialize_sass, "~> 0.1.1"}
+    {:materialize_sass, "~> 0.1.2"}
   ]
 end
 ```
@@ -105,9 +105,9 @@ Finally include javascript in app.html after script tag for app.js
 Special thanks to @mistim for inspring this module from https://github.com/mistim/ex_materialize
 
 ## Todo
-
-Update brunch-config on initialization
-css / scss option
+⋅⋅* Add tests
+⋅⋅* Update brunch-config on initialization
+⋅⋅* css / scss option
 
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
