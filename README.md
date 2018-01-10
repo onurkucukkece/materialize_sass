@@ -58,7 +58,7 @@ exports.config = {
 ```
 Import materialize stylesheet library at the top in app.scss
 
-```
+```sass
 # assets/css/app.scss
 
 @import "vendor/materialize/sass/materialize";
@@ -66,7 +66,7 @@ Import materialize stylesheet library at the top in app.scss
 
 To customize globals, for example colors;
 
-```
+```sass
 @import "vendor/materialize/sass/components/color";
 
 $primary-color:color('blue-grey', 'lighten-1') !default;
@@ -88,7 +88,7 @@ body {
 ```
 Finally include javascript in app.html after script tag for app.js
 
-```
+```html
 <!-- lib/myapp_web/templates/layout/app.html.eex -->
 
 <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
@@ -96,8 +96,12 @@ Finally include javascript in app.html after script tag for app.js
 ```
 
 Special thanks to @mistim for inspring this module from https://github.com/mistim/ex_materialize
+### Important
 
-## Todo
+This module will not work with older versions of Phoenix 1.3 due the changes described [here](https://gist.github.com/chrismccord/71ab10d433c98b714b75c886eff17357)
+
+
+### Todo
 * Add tests
 * Update brunch-config on initialization
 * css / scss option
