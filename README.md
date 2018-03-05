@@ -2,6 +2,9 @@
 
 https://hex.pm/packages/materialize_sass
 
+[![Hex.pm version](https://img.shields.io/hexpm/v/materialize_sass.svg?style=flat-square)](https://hex.pm/packages/materialize_sass)
+[![Hex.pm downloads](https://img.shields.io/hexpm/dt/materialize_sass.svg)](https://hex.pm/packages/materialize_sass)
+
 A modern responsive front-end framework based on Material Design
 
 http://materializecss.com/
